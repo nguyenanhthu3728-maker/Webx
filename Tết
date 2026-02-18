@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Năm Mới - Tết Nguyên Đán</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🧧 Tết Việt</div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Giới Thiệu</a></li>
+                <li><a href="#customs">Phong Tục</a></li>
+                <li><a href="#food">Ẩm Thực</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Chúc Mừng Năm Mới</h1>
+            <p>Chào đón Xuân Ất Tỵ 2025 - Vạn sự như ý, an khang thịnh vượng</p>
+            <a href="#intro" class="btn">Khám phá ngay</a>
+        </div>
+    </section>
+
+    <section id="intro" class="container">
+        <h2 class="section-title">Ý Nghĩa Ngày Tết</h2>
+        <p>Tết Nguyên Đán là dịp lễ quan trọng nhất trong văn hóa Việt Nam, là thời điểm để sum họp gia đình, tri ân tổ tiên và hy vọng vào một năm mới may mắn.</p>
+    </section>
+
+    <section id="customs" class="bg-light">
+        <div class="container">
+            <h2 class="section-title">Phong Tục Ngày Tết</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🌸 Chơi Hoa</h3>
+                    <p>Hoa Mai vàng ở miền Nam và hoa Đào thắm ở miền Bắc là biểu tượng không thể thiếu.</p>
+                </div>
+                <div class="card">
+                    <h3>🧧 Lì Xì</h3>
+                    <p>Trao đi những phong bao lì xì đỏ thắm kèm theo lời chúc tốt đẹp cho trẻ nhỏ và người già.</p>
+                </div>
+                <div class="card">
+                    <h3>🎆 Giao Thừa</h3>
+                    <p>Khoảnh khắc chuyển giao thiêng liêng giữa năm cũ và năm mới với những màn pháo hoa rực rỡ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="food" class="container">
+        <h2 class="section-title">Ẩm Thực Đặc Trưng</h2>
+        <div class="grid">
+            <div class="food-item">
+                <strong>Bánh Chưng / Bánh Tét</strong>
+                <p>Món bánh truyền thống thể hiện lòng biết ơn với đất trời và nguồn cội.</p>
+            </div>
+            <div class="food-item">
+                <strong>Mâm Ngũ Quả</strong>
+                <p>Cầu mong "Cầu - Sung - Dừa - Đủ - Xoài" cho một năm mới sung túc.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Trang web giới thiệu Tết Việt | Tinh hoa văn hóa Việt</p>
+    </footer>
+
+</body>
+</html>
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #d32f2f; /* Màu đỏ Tết */
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1576487248805-cf45f6bd679a?auto=format&fit=crop&q=80&w=1500') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: gold;
+}
+
+.hero h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+/* Common Layout */
+.container {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    color: #d32f2f;
+    font-size: 2rem;
+    position: relative;
+}
+
+.bg-light { background-color: #fff5f5; }
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-top: 5px solid #d32f2f;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: gold;
+    color: #d32f2f;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
